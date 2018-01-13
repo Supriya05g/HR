@@ -1,4 +1,5 @@
 /*
+	https://www.hackerrank.com/challenges/reverse-a-linked-list/problem
 	Reverse a linked list
 
   struct Node
@@ -10,7 +11,7 @@
 
 Node *Reverse(Node *head)
 {
-	Node *temp,*next,*prev;
+	Node *temp=head,*next,*prev;
 	prev=NULL;
 	while(temp!=NULL)
 	{
