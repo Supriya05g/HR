@@ -21,7 +21,7 @@ int main() {
 	cin>>n>>q;
 	for(i=0;i<n;i++)
 		seqList.push_back(vector<unsigned long long>());
-    // vector<vector<unsigned long int> > seqList(n, vector<unsigned long int>(q)); //Use this if you know the size of the array.   
+    // vector<vector<unsigned long int> > seqList(n, vector<unsigned long int>()); //Use this if you know the size of the array.   
 	// cout<<"Enter values: \n";
 	for(i=0;i<q;i++)
 	{
