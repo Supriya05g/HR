@@ -1,5 +1,5 @@
 /*
-https://www.hackerrank.com/challenges/array-left-rotation/problem
+    https://www.hackerrank.com/challenges/array-left-rotation/problem
     array-left-rotation
 */
 
