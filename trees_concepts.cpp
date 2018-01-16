@@ -156,7 +156,7 @@ node *lca(node *root, int v1,int v2)
     {
     	if(v1<(root->data) && v2<(root->data))
     		root=root->left;
-    	else if(v1>(root->data) &&                                     v2>(root->data))
+    	else if(v1>(root->data) && v2>(root->data))
     		root=root->right;
     	else if(v1==root->data || v2==root->data || (v1>(root->data) && v2<(root->data)) || (v1<(root->data) && v2>(root->data)) )
     		return root;
