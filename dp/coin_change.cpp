@@ -18,9 +18,9 @@ int main() {
     for (int i=0;i<m;i++) {
         for (int j=c[i];j<=n;j++) {
             numways[j]+=numways[j-c[i]]; 
-	    cout<<j<<'\t'<<numways[j]<<endl;
+	    // cout<<j<<'\t'<<numways[j]<<endl;
         }
-	cout<<"i= "<<i<<endl;
+	// cout<<"i= "<<i<<endl;
     }    
 
     cout << numways[n]<<endl;    
