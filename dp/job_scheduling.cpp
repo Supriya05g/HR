@@ -25,6 +25,8 @@ int max_profit(Job a[],int n){
 	sort(a,a+n,job_compare);
 
 	int *table= new int[n];
+	for(int i=0;i<n;i++)
+		table[i]=-1;
 	table[0]=a[0].profit;
 
 	for(int i=1;i<n;i++){
@@ -34,7 +36,7 @@ int max_profit(Job a[],int n){
 		if(l!=-1)
 			incl+=table[l];
 
-		table[i]=max(incl,a[i-1]);
+		table[i]=max(incl,table[i-1]);
 
 	}
 
