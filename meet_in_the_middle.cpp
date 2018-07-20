@@ -5,11 +5,11 @@
 typedef long long ll;
 using namespace std;
 
-void subarray(vector<ll> &sub,vector<ll>&arr,int c){
+void subarray(vector<ll> &sub,vector<ll>&arr,int n,int c){
 
 	for(int i=0;i<sub.size();i++){
 		ll s=0;
-		for(int j=0;j<arr.size();j++){
+		for(int j=0;j<n;j++){
 			if(i &(1<<j))
 			s+=arr[j+c];
 		}
@@ -22,8 +22,8 @@ int get_sum(vector<ll> &arr,int num){
 	vector<ll> X(1<<(n/2));
 	vector<ll> Y(1<<(n-n/2));
 
-	subarray(X,arr,0);
-	subarray(Y,arr,n/2);
+	subarray(X,arr,n/2,0);
+	subarray(Y,arr,n-n/2,n/2);
 
 	sort(Y.begin(),Y.end());
     ll max=0;
