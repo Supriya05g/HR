@@ -32,7 +32,7 @@ int max_value(knapsack a[],int n,int W){
 			continue;
 		else{
 			printf("%d  ",a[i-1].weight);
-		    res = res - val[i - 1];
+		    res = res - a[i - 1].value;
 			w=w-a[i-1].weight;
 		}
 	}
